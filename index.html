@@ -3,57 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Noticias - VerificadoNoticias</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        .container {
-            max-width: 800px;
-            margin: auto;
-        }
-        .article {
-            margin-bottom: 30px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-        .article h2 {
-            margin-top: 0;
-            font-size: 24px;
-        }
-        .article p {
-            font-size: 16px;
-            line-height: 1.6;
-        }
-    </style>
+    <title>Portal de Noticias</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Bienvenido al portal de noticias de VerificadoNoticias</h1>
+        <h1>Portal de Noticias</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <div class="container">
-            <div class="article">
-                <h2>Título de la noticia 1</h2>
-                <p>Descripción breve de la noticia 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            </div>
-            <div class="article">
-                <h2>Título de la noticia 2</h2>
-                <p>Descripción breve de la noticia 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-            </div>
-            <!-- Agrega más noticias aquí si lo deseas -->
-        </div>
+        <section>
+            <h2>Últimas Noticias</h2>
+            <article>
+                <h3>Título de la Noticia</h3>
+                <p>Contenido de la noticia.</p>
+                <a href="#">Leer más</a>
+            </article>
+            <!-- Repite este artículo para más noticias -->
+        </section>
     </main>
+
+    <footer>
+        <p>&copy; 2024 Portal de Noticias</p>
+    </footer>
 </body>
 </html>
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+article {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
