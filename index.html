@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My GitHub Repo</title>
+</head>
+<body>
+    <main>
+        <!-- Aquí mostrarás el contenido del README.md -->
+        <div id="readme-content"></div>
+    </main>
+
+    <script>
+        // Fetch the README.md content and display it
+        fetch('README.md')
+            .then(response => response.text())
+            .then(text => {
+                document.getElementById('readme-content').innerHTML = text;
+            })
+            .catch(error => {
+                console.error('Error fetching README.md:', error);
+            });
+    </script>
+</body>
+</html>
