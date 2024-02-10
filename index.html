@@ -3,87 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Noticias</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Verificado Noticias de Azul</title>
+    <style>
+        
+        /* Estilos generales */
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #0071bc;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        nav {
+            background-color: #004b8e;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .jumbotron {
+            background-color: #f2f2f2;
+            padding: 100px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .jumbotron h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        footer {
+            background-color: #5c92fd;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Verificado Noticias de Azul</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="equipo.html">Quiénes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <img src="logo.png" alt="Logo de Chequeado" class="logo">
+        <h1>Chequeado</h1>
     </header>
 
-    <main>
-        <section>
-            <h2>Últimas Noticias</h2>
-            <article>
-                <h3>Título de la Noticia</h3>
-                <p>Contenido de la noticia.</p>
-                <a href="#">Leer más</a>
-            </article>
-            <!-- Repite este artículo para más noticias -->
-        </section>
-    </main>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Verificación</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Verificamos qué es verdad y qué no</h1>
+            <p>Sumate a la lucha contra la desinformación.</p>
+            <button>Leer más</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>Últimas Novedades</h2>
+        <!-- Aquí irían las últimas verificaciones -->
+    </div>
 
     <footer>
-        <p>&copy; 2024 Portal de Noticias</p>
+        <p>&copy; 2024 Verificado Noticias. Todos los derechos reservados</p>
     </footer>
 </body>
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-article {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-}
-
-article h3 {
-    margin-top: 0;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-</style>
 </html>
