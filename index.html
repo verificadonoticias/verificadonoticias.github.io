@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificado Noticias</title>
+    <title>Verificado Noticias de Azul</title>
     <style>
         
         /* Estilos generales */
@@ -21,12 +21,21 @@
             text-align: center;
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column; /* Agregado para alinear el subtítulo debajo del título */
+            justify-content: space-between; /* Cambiado para alinear el logo y el título */
         }
 
         .logo {
-            width: 50px;
+            width: 100px; /* Ajustado el tamaño del logo */
+            margin-right: 10px;
+        }
+
+        .title-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .title-container h1 {
+            font-size: 36px; /* Ajustado el tamaño del título */
             margin-right: 10px;
         }
 
@@ -55,64 +64,4 @@
 
         .jumbotron {
             background-color: #f2f2f2;
-            padding: 100px 0;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .jumbotron h1 {
-            font-size: 36px;
-            color: #333;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        footer {
-            background-color: #5c92fd;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="logo.png" alt="Logotipo" class="logo">
-        <h1>Verificado Noticias de Azul</h1>
-        <h2>Noticias del Partido de Azul</h2> <!-- Subtítulo agregado -->
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="#">Verificación</a></li>
-            <li><a href="#">Quiénes somos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
-
-    <div class="jumbotron">
-        <div class="container">
-            <h1>Verificamos qué es verdad y qué no</h1>
-            <p>Sumate a la lucha contra la desinformación.</p>
-            <button>Leer más</button>
-        </div>
-    </div>
-
-    <div class="container">
-        <h2>Últimas Novedades</h2>
-        <!-- Aquí irían las últimas verificaciones -->
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Verificado Noticias. Todos los derechos reservados</p>
-    </footer>
-</body>
-</html>
+     
