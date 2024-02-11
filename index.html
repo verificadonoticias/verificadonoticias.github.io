@@ -20,14 +20,23 @@
             padding: 20px;
             text-align: center;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column; /* Agregado para alinear el subtítulo debajo del título */
+            align-items: center; /* Alinea verticalmente */
+            justify-content: center; /* Alinea horizontalmente */
         }
 
         .logo {
             width: 100px;
             margin-right: 10px;
+        }
+
+        .logo-container {
+            display: flex; /* Para alinear el logo y el texto en la misma línea */
+            align-items: center; /* Alinea verticalmente */
+        }
+
+        .title-container h1 {
+            font-size: 36px;
+            margin: 0; /* Elimina el margen del título */
         }
 
         nav {
@@ -84,8 +93,10 @@
 </head>
 <body>
 <header>
-    <img src="logo.png" alt="Logotipo" class="logo">
-    <h1 style="margin-bottom: 1px;">Verificado Noticias</h1>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logotipo" class="logo">
+        <h1>Verificado Noticias</h1>
+    </div>
     <h2><em>Noticias, novedades y toda la actualidad del partido de Azul</em></h2>
 </header>
 
