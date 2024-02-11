@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificado Noticias de Azul</title>
-    <style>
+   <style>
         /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
@@ -64,9 +64,9 @@
         }
 
         .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
+            max-width: 1200px; /* Ajuste del ancho máximo del contenedor */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            padding: 0 20px; /* Ajuste del padding del contenedor */
         }
 
         footer {
@@ -83,11 +83,11 @@
         .news-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around; /* Distribuye las columnas */
+            justify-content: space-between;
         }
 
         .news-item {
-            width: 30%; /* Ancho de cada noticia */
+            width: calc(33.33% - 20px); /* Ancho de cada noticia con margen ajustado */
             margin-bottom: 20px;
             position: relative;
         }
