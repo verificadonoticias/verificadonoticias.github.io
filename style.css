@@ -1,0 +1,17 @@
+/* Estilos generales que se aplican a todas las pantallas */
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 600px) {
+    /* Estilos específicos para pantallas con un ancho máximo de 600px */
+    /* Aquí puedes cambiar la disposición de los elementos, tamaños de fuente, etc. */
+}
+
+/* Media Query para pantallas medianas (tabletas) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos específicos para pantallas con un ancho entre 601px y 1024px */
+}
+
+/* Media Query para pantallas grandes (escritorio) */
+@media only screen and (min-width: 1025px) {
+    /* Estilos específicos para pantallas con un ancho mínimo de 1025px */
+}
