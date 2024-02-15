@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
     <link rel="stylesheet" type="text/css" href="styles.css">
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verificado Noticias de Azul</title>
-   <style>
-       
-       /* Estilos Generales */
-       
-         body {
+    <style>
+        /* Estilos Generales */
+        body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -46,12 +42,8 @@
             height: 100%;
         }
 
-        h1 {
-            margin: 0; /* Eliminamos el margen superior e inferior del título */
-        }
-
-        h2 {
-            margin-top: 0; /* Eliminamos el margen superior del subtítulo */
+        h1, h2 {
+            margin: 0; /* Eliminamos el margen superior e inferior del título y subtítulo */
         }
 
         nav {
@@ -77,19 +69,12 @@
             font-weight: bold;
         }
 
-        .jumbotron {
-            background-color: #f2f2f2;
-            padding: 100px 0;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
         .container {
-            flex: 1; /* Que el contenedor ocupe el espacio restante */
-            max-width: 1200px; /* Ajuste del ancho máximo del contenedor */
-            margin: 0 auto; /* Centra el contenedor horizontalmente */
-            padding: 0 20px; /* Ajuste del padding del contenedor */
-            margin-bottom: 20px; /* Nuevo margen inferior para el contenedor */
+            flex: 1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            margin-bottom: 20px;
         }
 
         footer {
@@ -97,10 +82,33 @@
             color: #fff;
             padding: 10px;
             text-align: center;
-            margin-top: auto; /* Se coloca automáticamente en la parte inferior */
+            margin-top: auto;
             width: 100%;
         }
+    </style>
+</head>
+<body>
+<header>
+    <img src="logo.png" alt="Logotipo" class="logo">
+    <h1>Verificado Noticias</h1>
+    <h2>Boletín oficial con las últimas novedades y toda la actualidad del partido de Azul</h2>
+</header>
 
+<!-- Banner 300x300 -->
+<div class="banner-300x300">
+    <a href="enlace_de_publicidad" target="_blank">
+        <img src="ruta_del_banner_300x300.gif" alt="Banner 300x300">
+    </a>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="#">Todas las Noticias</a></li>
+        <li><a href="#">Quiénes somos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
         /* Estilos para las noticias */
         .news-container {
             display: flex;
