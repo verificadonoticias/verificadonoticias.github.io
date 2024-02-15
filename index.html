@@ -3,6 +3,7 @@
 <head>
     
     <link rel="stylesheet" type="text/css" href="styles.css">
+
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,8 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            position: relative;
+            min-height: 100vh;
         }
 
         header {
@@ -75,10 +78,9 @@
             color: #fff;
             padding: 10px;
             text-align: center;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             width: 100%;
-            margin-top: 20px; /* Ajuste del margen superior del pie de página */
         }
 
         /* Estilos para las noticias */
@@ -119,7 +121,6 @@
             width: 1000px; /* Ancho del banner */
             height: 90px; /* Alto del banner */
         }
-       
     </style>
 </head>
 <body>
@@ -187,10 +188,12 @@
 </div>
 
 <!-- Banner 1000x90 -->
-<a href="enlace_a_tu_contenido" target="_blank">
-    <img src="ruta_del_banner_1000x90.gif" alt="Banner 1000x90" style="width: 1000px; height: 90px; margin-bottom: 20px;">
-</a>
-    
+<div class="banner-1000x90">
+    <a href="enlace_a_tu_contenido" target="_blank">
+        <img src="ruta_del_banner_1000x90.gif" alt="Banner 1000x90">
+    </a>
+</div>
+
 <footer>
     <p>&copy; 2024 Verificado Noticias. Todos los derechos reservados</p>
 </footer>
