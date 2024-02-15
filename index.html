@@ -11,28 +11,13 @@
        
        /* Estilos Generales */
        
-        body {
+         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-        }
-
-        /* Estilos para el encabezado y los banners cuadrados */
-        .banner-300x300-left,
-        .banner-300x300-right {
-            display: inline-block;
-            width: 300px;
-            height: 300px;
-            margin-top: 10px;
-        }
-
-        .banner-300x300-left img,
-        .banner-300x300-right img {
-            width: 100%;
-            height: 100%;
         }
 
         header {
@@ -42,13 +27,31 @@
             text-align: center;
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-direction: column;
+            justify-content: space-between;
         }
 
         .logo {
             width: 100px;
             margin-right: 10px;
+        }
+
+        .banner-300x300 {
+            width: 300px;
+            height: 300px;
+            margin-right: 10px;
+        }
+
+        .banner-300x300 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        h1 {
+            margin: 0; /* Eliminamos el margen superior e inferior del título */
+        }
+
+        h2 {
+            margin-top: 0; /* Eliminamos el margen superior del subtítulo */
         }
 
         nav {
