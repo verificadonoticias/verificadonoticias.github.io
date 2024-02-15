@@ -21,21 +21,35 @@
             min-height: 100vh;
         }
 
-        header {
-            background-color: #5c92fd;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-        }
+        /* Estilos para el encabezado */
+header {
+    background-color: #5c92fd;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
 
-        .logo {
-            width: 100px;
-            margin-right: 10px;
-        }
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-container {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.logo {
+    width: 100px;
+    margin-right: 10px;
+}
+
+.header-gif {
+    width: 300px;
+    height: 300px;
+    margin-top: 10px;
+}
 
         nav {
             background-color: #dce9fc;
@@ -127,13 +141,15 @@
 </head>
 <body>
 <header>
-    <img src="logo.png" alt="Logotipo" class="logo">
-    <h1 style="margin-bottom: 1px;">Verificado Noticias</h1>
-    <h2><em>Boletín oficial con las últimas novedades y toda la actualidad del partido de Azul</em></h2>
-    <!-- Agrega el GIF aquí -->
-    <img src="ruta_del_banner_300x300.gif" alt="gif principal" style="width: 300px; height: 300px; margin-top: 10px;">
+    <div class="header-content">
+        <div class="title-container">
+            <img src="logo.png" alt="Logotipo" class="logo">
+            <h1>Verificado Noticias</h1>
+            <h2>Boletín oficial con las últimas novedades y toda la actualidad del partido de Azul</h2>
+        </div>
+        <img src="tu_gif_300x300.gif" alt="Descripción del GIF" class="header-gif">
+    </div>
 </header>
-
 
 <nav>
     <ul>
