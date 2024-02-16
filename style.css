@@ -24,6 +24,15 @@
         margin-top: 10px;
     }
 
+    nav {
+        text-align: center; /* Centra los elementos del navbar */
+    }
+
+    nav ul li {
+        display: block; /* Cambia la visualización a bloque */
+        margin: 10px 0; /* Ajusta el margen de los elementos */
+    }
+
    .news-container .news-item {
         width: 100%; /* Ajusta el ancho de las noticias para ocupar toda la fila */
         margin-bottom: 20px; /* Agrega un margen inferior entre las noticias */
