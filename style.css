@@ -24,7 +24,7 @@
         margin-top: 10px;
     }
 
-    .news-item {
+   .news-container .news-item {
         width: 100%; /* Ajusta el ancho de las noticias para ocupar toda la fila */
         margin-bottom: 20px; /* Agrega un margen inferior entre las noticias */
     }
