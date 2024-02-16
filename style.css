@@ -1,17 +1,33 @@
-/* Estilos generales que se aplican a todas las pantallas */
+/* Estilos para dispositivos móviles */
 
-/* Media Query para pantallas pequeñas (móviles) */
-@media only screen and (max-width: 600px) {
-    /* Estilos específicos para pantallas con un ancho máximo de 600px */
-    /* Aquí puedes cambiar la disposición de los elementos, tamaños de fuente, etc. */
-}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+    }
 
-/* Media Query para pantallas medianas (tabletas) */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
-    /* Estilos específicos para pantallas con un ancho entre 601px y 1024px */
-}
+    .header-content {
+        flex-direction: column; /* Cambia la dirección del contenido del encabezado */
+        align-items: center; /* Centra los elementos del encabezado */
+        text-align: center;
+    }
 
-/* Media Query para pantallas grandes (escritorio) */
-@media only screen and (min-width: 1025px) {
-    /* Estilos específicos para pantallas con un ancho mínimo de 1025px */
+    .logo {
+        width: 80px; /* Ajusta el tamaño del logo para dispositivos móviles */
+        margin-right: 0; /* Elimina el margen derecho */
+    }
+
+    .header-gif {
+        width: 200px; /* Ajusta el tamaño del GIF del encabezado */
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .news-item {
+        width: 100%; /* Ajusta el ancho de las noticias para dispositivos móviles */
+    }
+
+    .banner-1000x90 img {
+        width: 100%; /* Ajusta el ancho del banner para dispositivos móviles */
+        height: auto;
+    }
 }
