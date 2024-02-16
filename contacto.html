@@ -161,7 +161,7 @@
     <main>
         <div class="container">
             <h2>Formulario de Contacto</h2>
-            <form action="#" method="post">
+            <form id="contact-form">
                 <div class="form-group">
                     <label for="name">Nombre:</label>
                     <input type="text" id="name" name="name" required>
@@ -174,7 +174,7 @@
                     <label for="message">Mensaje:</label>
                     <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
-                <button type="submit">Enviar</button>
+                <button type="button" onclick="sendEmail()">Enviar</button>
             </form>
         </div>
     </main>
@@ -183,5 +183,21 @@
         <p>&copy; 2024 Verificado Noticias. Todos los derechos reservados</p>
     </footer>
 
+    <script>
+        function sendEmail() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+
+            var subject = 'Mensaje de contacto de ' + name;
+            var body = 'Nombre: ' + name + '\n';
+            body += 'Correo Electrónico: ' + email + '\n';
+            body += 'Mensaje:\n' + message;
+
+            var mailtoLink = 'mailto:tucorreo@example.com' + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+
+            window.location.href = mailtoLink;
+        }
+    </script>
 </body>
 </html>
