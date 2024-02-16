@@ -28,13 +28,21 @@
         width: 100%; /* Ajusta el ancho de las noticias para dispositivos móviles */
     }
 
+    
     .news-item img {
         width: 100%; /* Ajusta el ancho de las imágenes de las noticias */
         height: auto; /* Mantiene la relación de aspecto */
     }
 
-    .banner-1000x90 img {
-        width: 100%; /* Ajusta el ancho del banner para dispositivos móviles */
-        height: auto;
+   .banner-1000x90 img {
+        max-width: 100%; /* Ajusta el ancho máximo del banner al tamaño del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
     }
+
+    .banner-1000x90 {
+        text-align: center; /* Centra el contenido del banner */
+        overflow: hidden; /* Evita que el contenido del banner sobresalga */
+        margin-bottom: 20px; /* Añade un margen inferior */
+    }
+  
 }
