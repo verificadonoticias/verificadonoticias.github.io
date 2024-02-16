@@ -5,17 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario de Contacto</title>
     <style>
-        /* Estilos generales */
+        /* Estilos Generales */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
 
+        /* Estilos para el encabezado */
         header {
-            background-color: #333;
+            background-color: #5c92fd;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .title-container {
+            flex-grow: 1;
+            text-align: left;
+        }
+        
+        .logo {
+            width: 111px;
+            margin-right: 10px;
+        }
+        
+        .main-title {
+            font-size: 47px; /* Tamaño del título principal */
+            margin-bottom: 5px; /* Espacio entre el título y la descripción */
+        }
+        
+        .subtitle {
+            font-size: 30px; /* Tamaño de la descripción */
+            line-height: 1; /* Espacio entre líneas */
+            margin-top: 2px; /* Espacio entre la descripción y el GIF */
+        }
+        
+        .header-gif {
+            width: 300px;
+            height: 300px;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #dce9fc;
             color: #fff;
             padding: 10px;
+            text-align: center;
         }
 
         nav ul {
@@ -25,14 +73,32 @@
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 30px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            font-weight: bold;
         }
 
+        .container {
+            max-width: 1200px; /* Ajuste del ancho máximo del contenedor */
+            margin: 0 auto; /* Centra el contenedor horizontalmente */
+            padding: 0 20px; /* Ajuste del padding del contenedor */
+            margin-bottom: 20px; /* Nuevo margen inferior para el contenedor */
+        }
+
+        footer {
+            background-color: #5c92fd;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Se coloca automáticamente en la parte inferior */
+            width: 100%;
+        }
+
+        /* Estilos para el formulario de contacto */
         main {
             padding: 20px;
         }
@@ -68,50 +134,53 @@
         button:hover {
             background-color: #555;
         }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Formulario de Contacto</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="equipo.html">Quiénes Somos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="header-content">
+            <div class="title-container">
+                <img src="logo.png" alt="Logotipo" class="logo">
+                <h1>Verificado Noticias</h1>
+                <h2>Boletín oficial con las últimas novedades <br> y toda la actualidad del partido de Azul.</h2>
+            </div>
+            <img src="ruta_del_banner_300x300.gif" alt="gis principal" class="header-gif">
+        </div>
     </header>
 
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Todas las Noticias</a></li>
+            <li><a href="#">Quiénes somos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="container">
+            <h2>Formulario de Contacto</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </main>
 
     <footer>
-        <p>&copy; 2024 Formulario de Contacto</p>
+        <p>&copy; 2024 Verificado Noticias. Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
