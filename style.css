@@ -28,9 +28,13 @@
         text-align: center; /* Centra los elementos del navbar */
     }
 
+    nav ul {
+        padding: 0; /* Elimina el relleno predeterminado de la lista */
+    }
+
     nav ul li {
-        display: block; /* Cambia la visualización a bloque */
-        margin: 10px 0; /* Ajusta el margen de los elementos */
+        display: inline-block; /* Cambia la visualización a en línea */
+        margin: 10px 5px; /* Ajusta el margen de los elementos */
     }
 
    .news-container .news-item {
