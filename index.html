@@ -151,10 +151,14 @@
         Boletín oficial con las últimas novedades <br>
         y toda la actualidad del partido de Azul.
     </h2>
-</div>
+    </div>
 
         <img src="ruta_del_banner_300x300.gif" alt="gis principal" class="header-gif">
+         
     </div>
+    
+    <div class="date-time" id="date-time"></div>
+
 </header>
 
 <nav>
@@ -230,6 +234,32 @@
 <footer>
     <p>&copy; 2024 Verificado Noticias. Todos los derechos reservados</p>
 </footer>
+    
+<script>
+    // Función para obtener la fecha y hora actual de Argentina
+    function obtenerFechaHoraArgentina() {
+        // Crear un objeto de fecha con la fecha y hora actual
+        var fechaHora = new Date();
+        
+        // Configurar la zona horaria a Argentina (GMT-3)
+        fechaHora.setUTCHours(fechaHora.getUTCHours() - 3);
+        
+        // Obtener la fecha y la hora en formato legible
+        var fecha = fechaHora.toLocaleDateString('es-AR');
+        var hora = fechaHora.toLocaleTimeString('es-AR');
+        
+        // Construir la cadena de fecha y hora
+        var fechaHoraArgentina = "Fecha y hora en Argentina: " + fecha + " - " + hora;
+        
+        // Actualizar el contenido del elemento con el id "date-time"
+        document.getElementById("date-time").innerText = fechaHoraArgentina;
+    }
+    
+    // Llamar a la función para que se ejecute cuando la página se cargue
+    window.onload = function() {
+        obtenerFechaHoraArgentina();
+    };
+</script>
 
 </body>
 </html>
